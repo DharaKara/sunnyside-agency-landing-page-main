@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <style>
+    .heading {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 900;
+      color: hsl(0, 0%, 45%);
+      letter-spacing: 5px;
+    }
+
+    /* Testimonial container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .testimonial-container {
+      width: 90%; 
+      margin-top: 30px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .testimonial-text {
+      font-weight: bold;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: hsl(0, 0%, 45%);
+      line-height: 1.5; 
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      font-size: 14px;
+      font-family: Georgia, Times, 'Times New Roman', serif;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-role {
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 11px; 
+      color: hsl(0, 0%, 65%);
+    }
+
+    .testimonial-image {
+      border-radius: 50%;
+      width: 80px;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    /* Attribution styles */
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (min-width: 300px) {
+      .testimonial-container {
+        width: 90%;
+      }
+    }
+
+    @media screen and (min-width: 500px) {
+      .container {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .testimonial-container {
+        width: 30%;
+      }
+    }
+
+    @media screen and (min-width: 700px) {
+      .testimonial-container {
+        width: 30%;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      .testimonial-container {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p class="heading">Client testimonials</p>
+
+  <!-- Testimonial section -->
+  <div class="container">
+    <div class="testimonial-container">
+      <img class="testimonial-image" src="./images/image-emily.jpg" alt="">
+      <p class="testimonial-text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+      <p class="testimonial-author">Emily R.</p>
+      <p class="testimonial-role">Marketing Director</p>
+    </div>
+
+    <div class="testimonial-container">
+      <img class="testimonial-image" src="./images/image-thomas.jpg" alt="">
+      <p class="testimonial-text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+      <p class="testimonial-author">Thomas S.</p>
+      <p class="testimonial-role">Chief Operating Officer</p>
+    </div>
+
+    <div class="testimonial-container">
+      <img class="testimonial-image" src="./images/image-jennie.jpg" alt="">
+      <p class="testimonial-text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+      <p class="testimonial-author">Jennie F.</p>
+      <p class="testimonial-role">Business Owner</p>
+    </div>
+  </div>
+
+  <!-- Attribution -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dhara Tina Kara</a>.
+  </div>
+</body>
+</html>
